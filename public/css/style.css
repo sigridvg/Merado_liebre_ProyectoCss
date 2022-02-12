@@ -1,36 +1,32 @@
+/*GENERALES */
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
 }
-
+/* Body*/
 body{
     background-color:  #ebebeb;
-    font-size: 12px;
-   
 }
-.topHeader{
+/* Header */
+.top-header{
     background-color:  #EAC926;
-    display: flexbox;
     padding: 20px;
-    flex-wrap:wrap;
-    margin: auto;
 }
 
-.logo{
-    width: 200px;
-    margin: 0px;
-    
+.container-header-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* Logo */
+.header-logo{
+    width: 50%; 
+    padding: 5px;   
 }
 
-
-.compra-cuotas-texto{
-    text-align: center;
-}
-.menu{
-    display: none;
-}
+/* Barra de busqueda */  
 .menu ul{
     list-style: none;
     padding: 0;
@@ -43,10 +39,61 @@ body{
     margin: 5px;
     padding: 0px;
     flex-direction:row;
+    text-decoration: none;
 }
 
+/* Search */
+.search{
+    width: 50%;
+    padding: 0px 5px;
+    margin: 8px auto 5px;
+}
 
+.search form{
+    display: flex;
+}
 
+.search input{
+    width: 100%;
+    padding: 16px;
+    height: 32px;
+    border:none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-button{
+    height: 32px;
+    background-color: #ebebeb;
+    border: none;
+    margin: 0;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* Conteiner mensaje */
+.conteiner-text{
+    margin: 10px auto 10px; 
+    padding: 5px;
+    text-align: center;
+}
+
+.conteiner-text i{
+    padding-right: 10px;
+    font-size: 20px;
+}
+.conteiner-text h2{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/* Imagen banner*/
+.image{
+    width: 100%;
+}
+
+/* Burger menu*/ 
 .burger-menu{
     border-image: 5%;
     text-align: center;
@@ -62,261 +109,8 @@ body{
    
 
 }
-
-.main-article{
-    background-color: white;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.section-tittle{
-    text-align: left;
-    font-size: 20px;
-    color: #666;
-    display: block;
-    margin: 10px;
-    
-}
-
-#elementos h4{
-    margin: 2px;
-   
-}
-
-img{
-    width: 100%;
-}
-
-#elementos{
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-    text-align: left;
-
-}
-#elementos i{
-    color:#39b54a; 
-    font-size: 16px;
-    padding: 5px;
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    right: 20px;
-    top: -15px;
-    justify-self: right;
-
-    margin: 10px;
-}
-.pagos{
-    display: flex;
-    justify-content: space-between;
-   
-    }
-
-h4.precio {
-    font-size: 28px; 
-    width: auto;
-   
-}
-
-h4.descuentos{
-    font-size: 16px;
-    color: #39b54a;
-    width: 70%;
-  
-}
-h4.descripciones{
+/*Menu*/
+.menu{
     display: none;
-}
-
-@media (min-width: 361px){
-
-    .main-article{
-        box-shadow: 0px 0px 0px;
-    }
-
-    .burger-menu{
-        display: none;
-    }
-    .menu{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .menu ul{
-        display: flex;
-        margin: 15px;
-    }
-    
-    h4.descripciones{
-        font-size: 16px;
-        display:block;
-    }
-
-    .contenedor-articulos{
-        display: flex;
-        justify-items: center;
-        flex-direction: row;
-    }
-    
-}
-
-@media (min-width: 769px){
-
-    .main-article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        display: flex;
-    }
-  
-
-    .visualizar-articulos{
-        display: flex;
-        justify-items: center;
-        flex-direction: row;
-    }
-    .contenedor-articulos{
-        display: flex;
-        justify-items: center;
-        flex-direction: row;
-    }
-}
-
-.logo-search{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-footer{
-    background-color: white;
-    margin: 2%;
-}
-
-.section-footer{
-    padding: 3%;
-    text-align: center;
-    font-size: medium; 
-}
-
-p>strong{
-    display: block;
-}
-
-.copyright{
-    color: #666;
-    text-align: left;
-    margin: 2%;
-}
-.icon{
-    text-align: center;
-    color: #1259c3;
-}
-.form-register{
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.form-register div{
-    margin-bottom: 15px;
-   
-}
-
-
-.input-login{
-    width: 100%;
-    padding: 8px 8px;
-}
-
-.datos{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-  
-}
-
-.datos input{
-    margin: 5px 0px;
-}
-
-.perfil{
-    display: inline;
-    width: 100%;
-    text-align: center;
-}
-
-.form-register h2{
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 20px;
-}
-
-input{
-    width: 100%;
-    padding: 8px 8px;
-    font-size: 2vh !important;
-    border: 1px solid #b7bec2;
-    border-radius: 5px;
-    margin: 10px 0px; 
-}
-.categorias input{
-    display: inline;
-    align-self: center;
-    padding: 2px;
-}
-
-.form-register label{
-    margin-bottom: 5px;
-    display: block;
-}
-
-.button{
-        text-align: center;
-    }
-.button button{
-        background-color: #0044AA;
-        border: none;
-        font-size: 15px;
-        color: white;
-        padding: 5px 10px;
-        border-radius:5px ;
-}
-
-section form{
-    display: block;
-    border: solid #666 1px;
-    border-radius: 30px;
-    margin: 5px;
-}
-
-.ingresa{
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 20px;
-}
-
-.boton-login{
-    text-align: right;
-    background-color: #8fb3dd;
-    border: none;
-    font-size: 3vh;
-    color: white;
-    padding: 5px 10px;
-    border-radius:5px ;
-   
-}
-.boton-login:hover{
-    background-color: #0022AA;
-}
-
-.botones-login{
-    text-align: center;
 }
 

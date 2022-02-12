@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mercado Liebre</title>
-    <link rel="stylesheet" href="/css/normalize.css">
+<!--<link rel="stylesheet" href="/css/normalize.css">!-->
     <link rel="stylesheet" href="/css/style.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
@@ -14,20 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body > 
-   <header class="topHeader">
-       <div class="logo-search">
-        <img class="logo" src="\images\logo-mercado-liebre.svg" alt="Logo meliebre">
+   <header class="top-header">
+       <div class="container-header-box">
+            <img class="header-logo" src="\images\logo-mercado-liebre.svg" alt="Logo meliebre">
             <div class = "search">
                 <form action="#" method="get">
-                   <input type="text"><i class="fas fa-search"></i>
+                   <input type="text" placeholder="Buscar productos, marca">                  
+                    <div>
+                        <button class="search-button" type="submit">
+                         <i class="fas fa-search"></i>
+                    </button>
+                  </div>
                 </form>
             </div>
-       </div>
-            
-            <div class="compra-cuotas-texto">
-               <h2> <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
-            </div>
-        
+            <div class="conteiner-text">
+                <h2> <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+             </div>
+       </div>  
         <nav class="menu">
             <ul class="left-navbar">
                 <li><a href=""> Ofertas</a></li>
@@ -46,10 +49,11 @@
         </div>
        
    </header>
+   <div class="image">
+    <img src="/images/img-home-banner.jpg" alt="banner">
+</div>
    <main>
-    <div class="image">
-        <img src="/images/img-home-banner.jpg" alt="banner">
-    </div>
+    
        <section class="articulos">
             <h3 class="section-tittle">Basado en tu última visita</h3>
             <div class="contenedor-articulos">
