@@ -11,7 +11,17 @@ app.listen(3030, () => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/home.html"));
+  res.sendFile(path.join(__dirname, "./src/views/home.html"));
+});
+
+
+app.get("/register", (req, res) => {
+  res.sendFile(path.join(__dirname, "./src/views/register.html"));
+});
+
+
+app.get("/login", (req, res) => {
+  res.sendFile(path.join(__dirname, "./src/views/login.html"));
 });
 
 
