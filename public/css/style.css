@@ -137,6 +137,56 @@ body{
     margin: 10px;
     
 }
+
+/*Elementos*/
+
+#elementos{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    text-align: left;
+
+}
+#elementos i{
+    color:#39b54a; 
+    font-size: 16px;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    justify-self: right;
+
+    margin: 10px;
+}
+
+/*Textos para precios y descripcion*/
+
+.pagos{
+    display: flex;
+    justify-content: space-between;
+   
+    }
+
+h4.precio {
+    font-size: 28px; 
+    width: auto;
+   
+}
+
+h4.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+  
+}
+h4.descripciones{
+    display: none;
+}
+
 /* Media Query*/
 /* TABLET*/
 
@@ -189,6 +239,13 @@ body{
         font-size: 12px;
         justify-content: center;
     }
+
+    /*Texto Descripcion*/   
+    h4.descripciones{
+        font-size: 16px;
+        display:block;
+    }
+    
 
 }
 /*DESPTOK*/
@@ -265,6 +322,13 @@ body{
         font-size: 12px;
         justify-content: center;
     }
+
+    /*Texto Descripcion*/   
+    h4.descripciones{
+            font-size: 16px;
+            display:block;
+        }
+        
     
 }
 
