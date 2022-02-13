@@ -126,6 +126,7 @@ body{
     margin: 10px;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px;
 }
 
 /*Titulo */
@@ -137,6 +138,66 @@ body{
     margin: 10px;
     
 }
+/*Articulos*/
+.main-article{
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-articulos article{
+    width: 100%;
+}
+
+/*Elementos de los articulos*/
+#elementos{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    text-align: left;
+
+}
+#elementos i{
+    color:#39b54a; 
+    font-size: 16px;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    justify-self: right;
+
+    margin: 10px;
+}
+
+/*Textos para precios y descripcion*/
+
+.pagos{
+    display: flex;
+    justify-content: space-between;
+   
+    }
+
+h4.precio {
+    font-size: 28px; 
+    width: auto;
+   
+}
+
+h4.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+  
+}
+h4.descripciones{
+    display: none;
+}
+
 /* Media Query*/
 /* TABLET*/
 
@@ -189,7 +250,28 @@ body{
         font-size: 12px;
         justify-content: center;
     }
+    /* Articulos*/
+    .visualizar-articulos{
+       display: flex;
+       flex-wrap: nowrap;
+    }
 
+    .main-article{
+        box-shadow: 0px 0px 0px;
+        width:100%;
+    }
+
+    .visualizar-articulos article{
+        justify-content: space-between;
+        width: 48%;
+        margin: 0 5px; 
+    }
+
+    /*Texto Descripcion*/   
+    h4.descripciones{
+        font-size: 16px;
+        display:block;
+    }
 }
 /*DESPTOK*/
 @media (min-width: 769px){
@@ -265,6 +347,40 @@ body{
         font-size: 12px;
         justify-content: center;
     }
+    /*Articulos */
+     .main-article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }   
+     .contenedor-articulos{
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contenedor-articulos div{
+        width: 90%;
+    
+    }
+    .visualizar-articulos{
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+    align-items: center;
+    }
+
+    .visualizar-articulos article{
+        width: 45%;
+    
+     }
+    
+    /*Texto Descripcion*/   
+    h4.descripciones{
+            font-size: 16px;
+            display:block;
+    }
+    
+  
+        
     
 }
 
