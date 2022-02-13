@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mercado Liebre</title>
-    <link rel="stylesheet" href="/css/normalize.css">
+<!--<link rel="stylesheet" href="/css/normalize.css">!-->
     <link rel="stylesheet" href="/css/style.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
@@ -14,20 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body > 
-   <header class="topHeader">
-       <div class="logo-search">
-        <img class="logo" src="\images\logo-mercado-liebre.svg" alt="Logo meliebre">
+   <header class="top-header">
+       <div class="container-header-box">
+            <img class="header-logo" src="\images\logo-mercado-liebre.svg" alt="Logo meliebre">
             <div class = "search">
                 <form action="#" method="get">
-                    <i class="fas fa-search"></i><input type="text"> 
+                   <input type="text" placeholder="Buscar productos, marca">                  
+                    <div>
+                        <button class="search-button" type="submit">
+                         <i class="fas fa-search"></i>
+                    </button>
+                  </div>
                 </form>
             </div>
-       </div>
-            
-            <div class="compra-cuotas-texto">
-               <h2> <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
-            </div>
-        
+            <div class="conteiner-text">
+                <h2> <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+             </div>
+       </div>  
         <nav class="menu">
             <ul class="left-navbar">
                 <li><a href=""> Ofertas</a></li>
@@ -36,8 +39,8 @@
                 <li><a href=""> Ayuda</a></li>
             </ul>
             <ul class="right-navbar">
-                <li> <a href="">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
-                <li><a href="">Ingresá <i class="fas fa-sign-out-alt"></i></a></li>
+                <li> <a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-out-alt"></i></a></li>
                 <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
@@ -45,13 +48,10 @@
             <i class="fas fa-bars"></i>
         </div>
        
-   </header>
-        <section class="banner">
-            <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
-        </section>
-        <main class="register">
+    </header>
+    <main class="register">
             <section>
-            <form action="#" method="post" class="form-register">
+            <form action="/" method="post" class="form-register">
                 <h4 class="ingresa">Ingresa:</h4>
                 <div >
                   
