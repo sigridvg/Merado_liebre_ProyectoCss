@@ -1,36 +1,32 @@
+/*GENERALES */
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
 }
-
+/* Body*/
 body{
     background-color:  #ebebeb;
-    font-size: 12px;
-   
 }
-.topHeader{
+/* Header */
+.top-header{
     background-color:  #EAC926;
-    display: flexbox;
     padding: 20px;
-    flex-wrap:wrap;
-    margin: auto;
 }
 
-.logo{
-    width: 200px;
-    margin: 0px;
-    
+.container-header-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* Logo */
+.header-logo{
+    width: 50%; 
+    padding: 5px;   
 }
 
-
-.compra-cuotas-texto{
-    text-align: center;
-}
-.menu{
-    display: none;
-}
+/* Barra de busqueda */  
 .menu ul{
     list-style: none;
     padding: 0;
@@ -43,10 +39,61 @@ body{
     margin: 5px;
     padding: 0px;
     flex-direction:row;
+    text-decoration: none;
 }
 
+/* Search */
+.search{
+    width: 50%;
+    padding: 0px 5px;
+    margin: 8px auto 5px;
+}
 
+.search form{
+    display: flex;
+}
 
+.search input{
+    width: 100%;
+    padding: 16px;
+    height: 32px;
+    border:none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-button{
+    height: 32px;
+    background-color: #ebebeb;
+    border: none;
+    margin: 0;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* Conteiner mensaje */
+.conteiner-text{
+    margin: 10px auto 10px; 
+    padding: 5px;
+    text-align: center;
+}
+
+.conteiner-text i{
+    padding-right: 10px;
+    font-size: 20px;
+}
+.conteiner-text h2{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/* Imagen banner*/
+.image-banner img{
+    width: 100%;
+}
+
+/* Burger menu*/ 
 .burger-menu{
     border-image: 5%;
     text-align: center;
@@ -59,10 +106,21 @@ body{
     border-radius: 15%;
     background-color: #1259c3;
     padding: 5px;
-   
-
+}
+/*Menu*/
+.menu{
+    display: none;
 }
 
+.menu ul{
+    list-style: none;
+   
+}
+.menu a{
+    color: #666;
+
+}
+/* Main */
 .main-article{
     background-color: white;
     margin: 10px;
@@ -70,6 +128,7 @@ body{
     flex-direction: column;
 }
 
+/*Titulo */
 .section-tittle{
     text-align: left;
     font-size: 20px;
@@ -78,139 +137,135 @@ body{
     margin: 10px;
     
 }
-
-#elementos h4{
-    margin: 2px;
-   
-}
-
-img{
-    width: 100%;
-}
-
-#elementos{
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-    text-align: left;
-
-}
-#elementos i{
-    color:#39b54a; 
-    font-size: 16px;
-    padding: 5px;
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    right: 20px;
-    top: -15px;
-    justify-self: right;
-
-    margin: 10px;
-}
-.pagos{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-h4.precio {
-    font-size: 28px; 
-    width: auto;
-   
-}
-
-h4.descuentos{
-    font-size: 16px;
-    color: #39b54a;
-    width: 70%;
-  
-}
-h4.descripciones{
-    display: none;
-}
+/* Media Query*/
+/* TABLET*/
 
 @media (min-width: 361px){
+    /*Container header */
+    .container-header-box{
 
-    .main-article{
-        box-shadow: 0px 0px 0px;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        
     }
-
+    /* Logo mercado liebre*/
+    .header-logo{
+        margin: 2px 0;
+    }
+    /*Texto Compra cuotas */
+    .conteiner-text{
+        margin: 10px auto 10px; 
+        padding: 5px;
+        text-align: center;
+    }
+    .conteiner-text h2 {
+        font-size: 15px;
+    }
+    /*Menu hamburguesa*/
     .burger-menu{
         display: none;
     }
+
+    /* Barra menu*/
     .menu{
         display: flex;
-        justify-content: space-between;
-    }
-
-    .menu ul{
-        display: flex;
-        margin: 15px;
-    }
-    
-    h4.descripciones{
-        font-size: 16px;
-        display:block;
-    }
-
-    .contenedor-articulos{
-        display: flex;
-        justify-items: center;
+        align-items: center;
         flex-direction: row;
+        flex-wrap: wrap;
     }
-    
-}
+    .menu ul {
+        margin: 0;
+        width: 50%;
+        height: 5%;
+    }
+    .menu li{
+        width: 100%;
+        padding: 5px;
+        height: 32px;
+        border:none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        font-size: 12px;
+        justify-content: center;
+    }
 
+}
+/*DESPTOK*/
 @media (min-width: 769px){
+    .container-header-box{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
 
-    .main-article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .header-logo{
+        margin: 2px 0;
+        width: 20%;
+    }
+    /*Mensaje compra */
+    .conteiner-text{
+        margin: auto; 
+        padding: 0;
+        text-align: center;
+    }
+    .conteiner-text i{
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    .conteiner-text h2{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    /*Search*/
+    .search{
+        margin: auto;
+
+    }
+    
+    .search form{
         display: flex;
     }
-  
-
-    .visualizar-articulos{
-        display: flex;
-        justify-items: center;
-        flex-direction: row;
+    
+    .search input{
+        width: 100%;
+        padding: 16px;
+        height: 15px;
+        border:none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
     }
-    .contenedor-articulos{
-        display: flex;
-        justify-items: center;
-        flex-direction: row;
+    
+    .search-button{
+        height: 32px;
+        background-color: #ebebeb;
+        border: none;
+        margin: 0;
+        padding: 8px;
+        cursor: pointer;
+        border-radius: 0px 5px 5px 0px;
     }
+
+    /*Menu */
+    .menu{
+        display: flex;
+    }
+    .menu ul {
+        margin: 0;
+        width: 50%;
+        height: 5%;
+    }
+    .menu li{
+        width: 100%;
+        padding: 5px;
+        height: 32px;
+        border:none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        font-size: 12px;
+        justify-content: center;
+    }
+    
 }
 
-.logo-search{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-footer{
-    background-color: white;
-    margin: 2%;
-}
-
-.section-footer{
-    padding: 3%;
-    text-align: center;
-    font-size: medium; 
-}
-
-p>strong{
-    display: block;
-}
-
-.copyright{
-    color: #666;
-    text-align: left;
-    margin: 2%;
-}
-.icon{
-    text-align: center;
-    color: #1259c3;
-}
-
+/* Fin Media Query*/

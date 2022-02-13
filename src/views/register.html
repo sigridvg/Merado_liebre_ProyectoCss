@@ -47,27 +47,65 @@
        
    </header>
    <main>
-       <form action="" method="post">
-        Nombre y apellido
-        ■ Nombre de usuari@
-        ■ Fecha de nacimiento
-        ■ Domicilio
-        ■ Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender)
-        ■ Categorías de interés (puede elegir más de una)
-        ● Electro
-        ● Moda
-        ● Hogar
-        ● Juguetería
-        ● Vida sana
-        ■ Foto de usuario
-        ■ Contraseña
-        ■ Confirmar contraseña
-        ■ Botón de enviar que nos lleve a la página principal
-        ■ Botón de borrar todos los datos del formulario
-        <input type="text">
-
+       <section>
+   
+       <form action="" method="post" class="form-register">
+        <h2>FORMULARIO REGISTRO</h2>
+        <div class="nombre">
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" >
+        </div>
+        <div class="username">
+            <input type="text" name="username" id="username" placeholder="Nombre de usuario">
+            <input type="text" name="email" placeholder="E-mail">
+        </div>
+        <div class="datos">
+            <label for=""><strong>Fecha de Nacimiento</strong></label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+            <input type="text" name="domicilio" placeholder="Domicilio">
+        </div>
+        <div class="perfil">
+            <label for="">Perfil del usuario</label>
+            <div class="perfil-checkbox">
+                <label for="">Comprador</label>
+                <input type="checkbox" name="comprador" id="comprador" value="Comprador">
+                <label for="">Vendedor</label>
+                <input type="checkbox" name="vendedor" id="vendedor" value="Vendedor">    
+            </div>
+        </div>
+        <div class="categorias">
+            <label for="">Categorias de interes</label>
+                <div class="categorias-radio">
+                   
+                    <input type="radio" name="Electro" id="Electro" value="Electro">
+                    <label for="">Electro</label>
+                   
+                    <input type="radio" name="Moda" id="Moda" value="Moda">
+                    <label for="">Moda</label>
+                   
+                    <input type="radio" name="Hogar" id="Hogar" value="Hogar">
+                    <label for="">Hogar</label>
+                   
+                    <input type="radio" name="Jugueteria" id="Jugeteria" value="Jugueteria">
+                    <label for="">Jugueteria</label>
+                   
+                    <input type="radio" name="VidaSana" id="VidaSana" value="Vida Sana">
+                    <label for="">Vida Sana</label>
+                </div>
+            </div>
+        <div class="file">   
+            <input type="file" name="fotoUsuario" id="imgUser">
+        </div>
+        <div class="pass">
+            <input type="password" name="pass" id="pass" placeholder="Contraseña">
+            <input type="password" name="repetpass" id="repetpass" placeholder="Repetir contraseña">
+        </div>
+        <div class="button">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </div>
        </form>
-
+        
+    </section>
    </main>
    <footer>
     <section class="section-footer">
