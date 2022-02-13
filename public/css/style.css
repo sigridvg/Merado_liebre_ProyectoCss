@@ -224,6 +224,112 @@ p>strong{
     color: #1259c3;
 }
 
+/*Formulario registro y login*/
+
+.form-register{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.form-register div{
+    margin-bottom: 15px;
+   
+}
+
+
+.input-login{
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  
+}
+
+.datos input{
+    margin: 5px 0px;
+}
+
+.perfil{
+    display: inline;
+    width: 100%;
+    text-align: center;
+}
+
+.form-register h2{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.form-register input{
+    width: 100%;
+    padding: 8px 8px;
+    font-size: 2vh !important;
+    border: 1px solid #b7bec2;
+    border-radius: 5px;
+    margin: 5px 0px; 
+}
+.categorias input{
+    display: inline;
+    align-self: center;
+    padding: 2px;
+}
+
+.form-register label{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.button{
+        text-align: center;
+    }
+.button button{
+        background-color: #0044AA;
+        border: none;
+        font-size: 15px;
+        color: white;
+        padding: 5px 10px;
+        border-radius:5px ;
+}
+
+section form{
+    display: block;
+    border: solid #666 1px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.ingresa{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.boton-login{
+    text-align: right;
+    background-color: #0022AA;
+    border: none;
+    font-size: 3vh;
+    color: white;
+    padding: 5px 10px;
+    border-radius:5px ;
+   
+}
+.botones-login{
+    text-align: center;
+}
+
+
 /* Media Query*/
 /* TABLET*/
 
@@ -302,6 +408,7 @@ p>strong{
 
 /*DESPTOK*/
 @media (min-width: 769px){
+    /*Header*/
     .container-header-box{
         display: flex;
         flex-wrap: nowrap;
