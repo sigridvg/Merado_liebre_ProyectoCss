@@ -1,36 +1,32 @@
+/*GENERALES */
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
 }
-
+/* Body*/
 body{
     background-color:  #ebebeb;
-    font-size: 12px;
-   
 }
-.topHeader{
+/* Header */
+.top-header{
     background-color:  #EAC926;
-    display: flexbox;
     padding: 20px;
-    flex-wrap:wrap;
-    margin: auto;
 }
 
-.logo{
-    width: 200px;
-    margin: 0px;
-    
+.container-header-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* Logo */
+.header-logo{
+    width: 50%; 
+    padding: 5px;   
 }
 
-
-.compra-cuotas-texto{
-    text-align: center;
-}
-.menu{
-    display: none;
-}
+/* Barra de busqueda */  
 .menu ul{
     list-style: none;
     padding: 0;
@@ -43,10 +39,61 @@ body{
     margin: 5px;
     padding: 0px;
     flex-direction:row;
+    text-decoration: none;
 }
 
+/* Search */
+.search{
+    width: 50%;
+    padding: 0px 5px;
+    margin: 8px auto 5px;
+}
 
+.search form{
+    display: flex;
+}
 
+.search input{
+    width: 100%;
+    padding: 16px;
+    height: 32px;
+    border:none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-button{
+    height: 32px;
+    background-color: #ebebeb;
+    border: none;
+    margin: 0;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* Conteiner mensaje */
+.conteiner-text{
+    margin: 10px auto 10px; 
+    padding: 5px;
+    text-align: center;
+}
+
+.conteiner-text i{
+    padding-right: 10px;
+    font-size: 20px;
+}
+.conteiner-text h2{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/* Imagen banner*/
+.image-banner img{
+    width: 100%;
+}
+
+/* Burger menu*/ 
 .burger-menu{
     border-image: 5%;
     text-align: center;
@@ -59,17 +106,30 @@ body{
     border-radius: 15%;
     background-color: #1259c3;
     padding: 5px;
-   
-
+}
+/*Menu*/
+.menu{
+    display: none;
 }
 
+.menu ul{
+    list-style: none;
+   
+}
+.menu a{
+    color: #666;
+
+}
+/* Main */
 .main-article{
     background-color: white;
     margin: 10px;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px;
 }
 
+/*Titulo */
 .section-tittle{
     text-align: left;
     font-size: 20px;
@@ -78,16 +138,19 @@ body{
     margin: 10px;
     
 }
-
-#elementos h4{
-    margin: 2px;
-   
+/*Articulos*/
+.main-article{
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-img{
+.contenedor-articulos article{
     width: 100%;
 }
 
+/*Elementos de los articulos*/
 #elementos{
     border-top: solid 1px #ebebeb;
     padding: 15px;
@@ -110,11 +173,14 @@ img{
 
     margin: 10px;
 }
+
+/*Textos para precios y descripcion*/
+
 .pagos{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
+   
+    }
 
 h4.precio {
     font-size: 28px; 
@@ -132,63 +198,7 @@ h4.descripciones{
     display: none;
 }
 
-@media (min-width: 361px){
-
-    .main-article{
-        box-shadow: 0px 0px 0px;
-    }
-
-    .burger-menu{
-        display: none;
-    }
-    .menu{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .menu ul{
-        display: flex;
-        margin: 15px;
-    }
-    
-    h4.descripciones{
-        font-size: 16px;
-        display:block;
-    }
-
-    .contenedor-articulos{
-        display: flex;
-        justify-items: center;
-        flex-direction: row;
-    }
-    
-}
-
-@media (min-width: 769px){
-
-    .main-article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        display: flex;
-    }
-  
-
-    .visualizar-articulos{
-        display: flex;
-        justify-items: center;
-        flex-direction: row;
-    }
-    .contenedor-articulos{
-        display: flex;
-        justify-items: center;
-        flex-direction: row;
-    }
-}
-
-.logo-search{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+/* Footer */
 footer{
     background-color: white;
     margin: 2%;
@@ -214,3 +224,299 @@ p>strong{
     color: #1259c3;
 }
 
+/*Formulario registro y login*/
+
+.form-register{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.form-register div{
+    margin-bottom: 15px;
+   
+}
+
+
+.input-login{
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  
+}
+
+.datos input{
+    margin: 5px 0px;
+}
+
+.perfil{
+    display: inline;
+    width: 100%;
+    text-align: center;
+}
+
+.form-register h2{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.form-register input{
+    width: 100%;
+    padding: 8px 8px;
+    font-size: 2vh !important;
+    border: 1px solid #b7bec2;
+    border-radius: 5px;
+    margin: 5px 0px; 
+}
+.categorias input{
+    display: inline;
+    align-self: center;
+    padding: 2px;
+}
+
+.form-register label{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.button{
+        text-align: center;
+    }
+.button button{
+        background-color: #0044AA;
+        border: none;
+        font-size: 15px;
+        color: white;
+        padding: 5px 10px;
+        border-radius:5px ;
+}
+
+section form{
+    display: block;
+    border: solid #666 1px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.ingresa{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.boton-login{
+    text-align: right;
+    background-color: #0022AA;
+    border: none;
+    font-size: 3vh;
+    color: white;
+    padding: 5px 10px;
+    border-radius:5px ;
+   
+}
+.botones-login{
+    text-align: center;
+}
+
+
+/* Media Query*/
+/* TABLET*/
+
+@media (min-width: 361px){
+    /*Container header */
+    .container-header-box{
+
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        
+    }
+    /* Logo mercado liebre*/
+    .header-logo{
+        margin: 2px 0;
+    }
+    /*Texto Compra cuotas */
+    .conteiner-text{
+        margin: 10px auto 10px; 
+        padding: 5px;
+        text-align: center;
+    }
+    .conteiner-text h2 {
+        font-size: 15px;
+    }
+    /*Menu hamburguesa*/
+    .burger-menu{
+        display: none;
+    }
+
+    /* Barra menu*/
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .menu ul {
+        margin: 0;
+        width: 50%;
+        height: 5%;
+    }
+    .menu li{
+        width: 100%;
+        padding: 5px;
+        height: 32px;
+        border:none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        font-size: 13px;
+        justify-content: center;
+    }
+    /* Articulos*/
+    .visualizar-articulos{
+       display: flex;
+       flex-wrap: nowrap;
+    }
+
+    .main-article{
+        box-shadow: 0px 0px 0px;
+        width:100%;
+    }
+
+    .visualizar-articulos article{
+        justify-content: space-between;
+        width: 48%;
+        margin: 0 5px; 
+    }
+
+    /*Texto Descripcion*/   
+    h4.descripciones{
+        font-size: 16px;
+        display:block;
+    }
+}
+
+/*DESPTOK*/
+@media (min-width: 769px){
+    /*Header*/
+    .container-header-box{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .header-logo{
+        margin: 2px 0;
+        width: 20%;
+    }
+    /*Mensaje compra */
+    .conteiner-text{
+        margin: auto; 
+        padding: 0;
+        text-align: center;
+    }
+    .conteiner-text i{
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    .conteiner-text h2{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    /*Search*/
+    .search{
+        margin: auto;
+
+    }
+    
+    .search form{
+        display: flex;
+    }
+    
+    .search input{
+        width: 100%;
+        padding: 16px;
+        height: 15px;
+        border:none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+    }
+    
+    .search-button{
+        height: 32px;
+        background-color: #ebebeb;
+        border: none;
+        margin: 0;
+        padding: 8px;
+        cursor: pointer;
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    /*Menu */
+    .menu{
+        display: flex;
+    }
+    .menu ul {
+        margin: 0;
+        width: 50%;
+        height: 5%;
+    }
+    .menu li{
+        width: 100%;
+        padding: 5px;
+        height: 32px;
+        border:none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        font-size: 17px;
+        justify-content: center;
+    }
+
+    /*Articulos */
+     .main-article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }   
+     .contenedor-articulos{
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contenedor-articulos div{
+        width: 90%;
+    
+    }
+    .visualizar-articulos{
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+    align-items: center;
+    }
+
+    .visualizar-articulos article{
+        width: 45%;
+    
+     }
+    
+    /*Texto Descripcion*/   
+    h4.descripciones{
+            font-size: 16px;
+            display:block;
+    }
+    
+  
+        
+    
+}
+
+/* Fin Media Query*/
