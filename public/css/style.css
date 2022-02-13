@@ -144,10 +144,19 @@ body{
     margin: 10px;
     display: flex;
     flex-direction: column;
+    transition: all 450ms;
+}
+
+.main-article:hover{
+    position: relative;
+    bottom: 5px; 
+    left: -5px;
+    box-shadow: 5px 5px 5px #b7bec2;
 }
 
 .contenedor-articulos article{
     width: 100%;
+  
 }
 
 /*Elementos de los articulos*/
@@ -155,7 +164,7 @@ body{
     border-top: solid 1px #ebebeb;
     padding: 15px;
     text-align: left;
-
+    position: relative;
 }
 #elementos i{
     color:#39b54a; 
@@ -167,12 +176,19 @@ body{
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
+    position: absolute;
     right: 20px;
     top: -15px;
     justify-self: right;
-
     margin: 10px;
+    transition: all 550ms;
 }
+
+/*Animacion camioncito*/
+#elementos i:hover {
+    transform: rotateZ(270deg);
+}
+
 
 /*Textos para precios y descripcion*/
 
@@ -194,18 +210,30 @@ h4.descuentos{
     width: 70%;
   
 }
-h4.descripciones{
-    display: none;
-}
+
+/*Texto Descripcion*/   
+.descripciones{
+    color: white;
+    transition: color 450ms;
+ }
+/*Animacion - Descripcion*/
+ .descripciones:hover {
+     color: black;
+     font-size: 16px;
+
+ }
 
 /* Footer */
-footer{
+footer{  
     background-color: white;
     margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .section-footer{
     padding: 3%;
+    width: 100%;
     text-align: center;
     font-size: medium; 
 }
@@ -222,10 +250,14 @@ p>strong{
 .icon{
     text-align: center;
     color: #1259c3;
+    transition: all 450ms;
+}
+
+.icon:hover{
+    color:#666;
 }
 
 /*Formulario registro y login*/
-
 .form-register{
     padding: 20px 15px;
     display: flex;
@@ -239,7 +271,6 @@ p>strong{
     margin-bottom: 15px;
    
 }
-
 
 .input-login{
     width: 100%;
@@ -316,24 +347,22 @@ section form{
 }
 
 .boton-login{
-    text-align: right;
-    background-color: #0022AA;
+    background-color: #666;
     border: none;
     font-size: 3vh;
     color: white;
     padding: 5px 10px;
     border-radius:5px ;
+    text-align: center;
    
 }
-.botones-login{
-    text-align: center;
+/*Animaciones -  boton de login*/
+.boton-login:hover{
+    background-color: #0022AA;
 }
-
-
 
 /* Media Query*/
 /* TABLET*/
-
 @media (min-width: 361px){
     /*Container header */
     .container-header-box{
@@ -400,11 +429,7 @@ section form{
         margin: 0 5px; 
     }
 
-    /*Texto Descripcion*/   
-    h4.descripciones{
-        font-size: 16px;
-        display:block;
-    }
+    
 }
 
 /*DESPTOK*/
@@ -514,9 +539,19 @@ section form{
             font-size: 16px;
             display:block;
     }
+    /*Footer*/
+   .conteiner-section-footer{
+       display: flex;
+       flex-wrap: nowrap;
+   }
+
+    .copyright{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
     
-  
-        
+
     
 }
 
