@@ -186,7 +186,7 @@ body{
 
 /*Animacion camioncito*/
 #elementos i:hover {
-    transform: rotateZ(270deg);
+    transform: rotateZ(-90deg);
 }
 
 
