@@ -193,15 +193,16 @@ body{
 /*Textos para precios y descripcion*/
 
 .pagos{
+    width: 100%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-   
+    align-items: flex-start;   
     }
 
 h4.precio {
-    font-size: 28px; 
-    width: auto;
-   
+    font-size: 14px; 
 }
 
 h4.descuentos{
@@ -533,7 +534,15 @@ section form{
         width: 45%;
     
      }
-    
+    /*Textos Precio y descuentos*/ 
+    h4.precio {
+        font-size: 14px; 
+        width: auto;
+       
+    }
+    h4.descuentos{
+        font-size: 12px;
+    }
     /*Texto Descripcion*/   
     h4.descripciones{
             font-size: 16px;
