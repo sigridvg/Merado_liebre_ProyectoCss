@@ -252,6 +252,8 @@ p>strong{
     text-align: center;
     color: #1259c3;
     transition: all 450ms;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .icon:hover{
